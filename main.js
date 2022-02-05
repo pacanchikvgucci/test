@@ -31,4 +31,4 @@ client.on('guildMemberRemove', member => { // ивент, когда польз�
 
 var interval = setInterval(function () { change(); }, 20000  ); // время обновления в миллисекундах
 
-client.login('OTM5MzU4NzY4ODg4NjgwNTA4.Yf3sBg.pvV3V0-mYxT6RlXlWFeLdsIDbaE') // токен вашего бота
+client.login(process.env.BOT_TOKEN) // токен вашего бота
