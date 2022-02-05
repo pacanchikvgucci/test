@@ -1,11 +1,6 @@
 const Discord = require('discord.js') // подключение библиотеки                  Видео про бота https://youtu.be/1lzPIhTaPDY
 const client = new Discord.Client() // создание клиента
 
-client.on('ready', () =>{ // ивент, когда бот запускается https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-ready
-    client.generateInvite("ADMINISTRATOR").then(invite => console.log(`Ссылка на добавление ${invite}`))
-    console.log(`Привет! ${client.user.tag} запустился!`) // информация в консоль про успешный запуск
-})
-
 
 client.on('messageDelete', message =>{ // ивент, когда удаляется любое сообщение с сервера https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-guildMemberAdd
     let embed = new Discord.MessageEmbed()
